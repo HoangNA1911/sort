@@ -21,3 +21,5 @@ bước 1 kiểm tra xem i<n-1 nếu đúng đến bước 2, nếu sai thoát.
 bước 2 kiểm tra xem j>i nếu đúng đến bước 3, nếu sai quay lại bước 1 i++.;
 bước 3 kiểm tra arr[j]<=arr[j-1] nếu đúng đên bước 4 nếu sai quay lại bước 2 j--;
 bước 4 swap(arr[j],arr[j-1]) đổi vị trí arr[j] và arr[j+1] quay lại bước 2 j--;
+
+123
