@@ -1,0 +1,23 @@
+*Insertion Sort 
+độ phức tạp best case: O(n), worst case O(n^2)
+dùng khi quá trình swap phức tạp và số phần tử không quá nhiều
+
+gán i=1
+bước 1:kiểm tra i<n nếu đúng tiếp tục nếu sai thoát khỏi hàm ;
+bước 2: gán key=arr[i] và j=i-1;
+bước 3: kiểm tra j>=0 &&arr[j]>key nếu đúng đến bước 4 nếu sai quay lại bước 1 i++;
+bước 4:arr[j+1]=arr[j];
+		j=j-1;
+bước 5 gán arr[j+1]=key; quay lại bước 1 i++;
+
+*bubble Sort
+ý tưởng chia mảng thành 2 phần 1 phần đã sort và 1 phần chưa sort (ban đầu có thể không có phần đã sort) 
+check liên tiếp các cặp giá trị của mảng cho đến khi mảng được sort hoàn toàn.
+độ phức tạp thấp, quá trình thực hiện tốn nhiều thời gian.
+best case o(n), worst case O(n^2)
+
+gán i=0, j=n-1;
+bước 1 kiểm tra xem i<n-1 nếu đúng đến bước 2, nếu sai thoát.
+bước 2 kiểm tra xem j>i nếu đúng đến bước 3, nếu sai quay lại bước 1 i++.;
+bước 3 kiểm tra arr[j]<=arr[j-1] nếu đúng đên bước 4 nếu sai quay lại bước 2 j--;
+bước 4 swap(arr[j],arr[j-1]) đổi vị trí arr[j] và arr[j+1] quay lại bước 2 j--;
